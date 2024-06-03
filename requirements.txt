@@ -1,0 +1,5 @@
+subprocess.run==0.0.8
+pillow==10.3.0
+## Torch dependencies are not be needed in the requirements.txt, since they are already included in the PyTorch AMI
+#pytorch==2.3.0
+#torchvision==0.18.0

@@ -1,0 +1,9 @@
+a0-variables.js
+auth_config.json
+node_modules/
+server.zip
+scripts/Deliverables
+public/images/step2_output/bounding_box/*.jpg
+public/images/step2_output/cropped/*.jpg
+public/images/step3_output/*.jpg
+env/

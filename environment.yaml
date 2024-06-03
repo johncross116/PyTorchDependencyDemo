@@ -1,0 +1,12 @@
+name: pytorch-demo
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - pytorch=2.3.0
+  - torchvision=0.18.0
+  - pillow=10.3.0
+  - subprocess.run=0.0.8
+  - pip:
+    - torch
+
