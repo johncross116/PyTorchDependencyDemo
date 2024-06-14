@@ -25,8 +25,7 @@ app.get('/', (req, res) => {
 app.get('/runStep4', async (req, res) => {
   console.log("About to call python... ");
 
-  // Input is parameterized
-  const python = spawn(pythonCmd, ["./scripts/deliverables/codes/pytorch_sample.py"]);
+  const python = spawn(pythonCmd, ["./scripts/deliverables/codes/torch_sample.py"]);
   let dataToSend = '';
 
   python.stdout.on('data', (data) => {
@@ -59,23 +58,4 @@ process.on("SIGINT", function() {
 });
 
 module.exports = app;
-
-
-// const numImages = 20;
-// let imageContainersHtml = ""; // Start with an empty string
-
-// for (let i = 1; i <= numImages; i++) {
-//   const imageNumber = i.toString().padStart(2, "0"); // Ensure two digits
-
-//   imageContainersHtml += `
-//     <div class="image-container">
-//       <img src="images/input/S${imageNumber}.jpg" onclick="selectImage(this, 'S${imageNumber}')">
-//       <div class="image-text">S${imageNumber}</div>
-//     </div>
-//   `;
-// }
-
-// //res.send(imageContainersHtml);
-// //res.render('public/js/app.js', { imageContainersHtml: imageContainersHtml });
-
 

@@ -1,9 +1,9 @@
-## PyTorch Dependency Demo
+## Torch Dependency Demo
 This is a basic demo application that isolates the issue. The idea is that the "torch" module should be included with the PyTorch AMI once "source activate pytorch" is run per the documentation, but the module is not found when running the python script. Screenshots are included in the root directory. 
 
 
 ### Problems to overcome
-My issue is in importing the PyTorch library. I realize that AWS has set this dependency up through an AMI, since it cannot be installed like other packages are.
+My issue is in importing the torch library. I realize that AWS has set this dependency up through an AMI, since it cannot be installed like other packages are.
 
 I have added this AMI to my ElasticBeanstalk instance. I would send logs for this if it was configured through the .ebextensions, but these steps were managed through the dashboard. When I SSH into the EB instance, I am given a note saying "To activate pre-built pytorch environment, run: 'source activate pytorch'"
 
